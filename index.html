@@ -1,1 +1,49 @@
-"<html><head><style>body { font-family: Arial, sans-serif; color: #333333; margin: 0; padding: 0; background-color: #f7f7f7; text-align: center; box-sizing: border-box; } .email-container { width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; text-align: center; box-sizing: border-box; } .hero-container { width: 100%; max-width: 600px; max-height: 300px; overflow: hidden; } .hero-image { width: 100%; object-fit: cover; } .content { font-size: 18px; line-height: 1.6; margin: 20px 0; text-align: left; box-sizing: border-box; } .cta-button { display: inline-block; padding: 12px 24px; background-color: #007bff; color: #ffffff !important; text-decoration: none; border-radius: 5px; font-size: 18px; margin-top: 20px; } </style></head><body><div class='email-container'><div class='hero-container'><img src='https://v5.airtableusercontent.com/v3/u/34/34/1730858400000/quzx7IChz5KFb6AGIYb0bg/l_HdKWehUyPgpXsyRTo-ZJrAMwxYoyDe2zQ-ba5Yq8cjHUTk4f-ZuEOttUvJM9EMmp_Zytxmf5LNZTk2Kwg3UjMtzHhLhvKs2wR0TdtgVbyNOsONQ4GV_HDeVdnIAl-LLmY-oCHDRL-WPTo1nBLKkg/LfnwyquFoRndStEBpy9WTkO9GT3ju_iKa3LaqTACIio' alt='Hero Image' class='hero-image'></div><div class='content'>" & {SMS to Send} & "</div><a href='" & {URL} & "' class='cta-button'>Start Survey</a></div></body></html>"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swizzl Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        .button {
+            display: block;
+            margin: 15px 0;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #121212;
+            background-color: #bb86fc;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .button:hover {
+            background-color: #3700b3;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Swizzl Demo</h1>
+        <a href="https://airtable.com/apppgCUAbyxEZzMG3/pagjFEItVtGVsRsSd/form" class="button">New Customer</a>
+        <a href="https://airtable.com/apppgCUAbyxEZzMG3/paglRCHQWlEW1K1Rf/form" class="button">Add Swizzl Survey</a>
+        <a href="https://airtable.com/apppgCUAbyxEZzMG3/shrCOvVfQIFjGTtQp?g9Gky=recBqYKKJmn5rgHzV" class="button">Sales Sheet</a>
+    </div>
+</body>
+</html>
