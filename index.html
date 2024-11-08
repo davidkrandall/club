@@ -3,56 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swizzl Demo</title>
+    <title>Swizzl Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #121212;
+            background-color: #1a1a1a;
             color: #e0e0e0;
+            background-image: url('transparentlogo.png');
+            background-repeat: repeat;
+            background-size: 100px;
+            background-position: center;
         }
+
         .container {
+            display: flex;
+            gap: 40px;  /* Space between columns */
+        }
+
+        .column {
             text-align: center;
         }
-        h1 {
-            color: #ffffff;
+
+        h2 {
+            color: #e0e0e0;
+            margin-bottom: 20px;
         }
+
         .button {
             display: block;
-            margin: 15px 0;
-            padding: 15px 25px;
-            font-size: 18px;
-            color: #121212;
-            background-color: #bb86fc;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #333;
+            color: white;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+            transition: background-color 0.3s;
         }
+
         .button:hover {
-            background-color: #3700b3;
-            color: #ffffff;
+            background-color: #444;
         }
-        .highlight-button {
-            background-color: #03dac5;
+
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            text-align: center;
         }
-        .highlight-button:hover {
-            background-color: #018786;
-            color: #ffffff;
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Add this media query for mobile devices */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 20px;  /* Reduced space between stacked columns */
+            }
+
+            h1 {
+                font-size: 2em;  /* Slightly smaller title on mobile */
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Swizzl Demo</h1>
-        <a href="https://airtable.com/apppgCUAbyxEZzMG3/pagjFEItVtGVsRsSd/form" class="button" target="_blank">New Customer</a>
-        <a href="https://cars.swizzl.ai/" class="button highlight-button" target="_blank">Take Swizzl Survey</a>
-        <a href="https://console.swizzl.ai/dashboard?country=NA&subdomain=cars&device_type=all" class="button" target="_blank">Copy Survey</a>
-        <a href="https://airtable.com/apppgCUAbyxEZzMG3/paglRCHQWlEW1K1Rf/form" class="button" target="_blank">Paste Survey</a>
-        <a href="https://airtable.com/apppgCUAbyxEZzMG3/shrCOvVfQIFjGTtQp?g9Gky=recBqYKKJmn5rgHzV" class="button" target="_blank">Sales Sheet</a>
+    <div class="page-container">
+        <h1>The Swizzl Club</h1>
+        <div class="container">
+            <div class="column">
+                <h2>Cars Demo</h2>
+                <a href="https://airtable.com/apppgCUAbyxEZzMG3/pagjFEItVtGVsRsSd/form" class="button" target="_blank">New Customer</a>
+                <a href="https://cars.swizzl.ai/" class="button" target="_blank">Take Swizzl Survey</a>
+                <a href="https://console.swizzl.ai/dashboard?country=NA&subdomain=cars&device_type=all" class="button" target="_blank">Copy Survey</a>
+                <a href="https://airtable.com/apppgCUAbyxEZzMG3/paglRCHQWlEW1K1Rf/form" class="button" target="_blank">Paste Survey</a>
+                <a href="https://airtable.com/apppgCUAbyxEZzMG3/shrCOvVfQIFjGTtQp?g9Gky=recBqYKKJmn5rgHzV" class="button" target="_blank">Sales Sheet</a>
+            </div>
+            <div class="column">
+                <h2>Other Links</h2>
+                <a href="https://swizzl-ai.github.io/marketingsite/" class="button" target="_blank">Website Redesign</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
